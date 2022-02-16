@@ -1,0 +1,62 @@
+body{
+   
+    background-image:url(../img/maxresdefault.jpg);
+/* background-size: cover; */
+background-position: center;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.tt{
+    margin-top: 10%;
+}
+.navbar
+{position: fixed;
+    top: 0;
+    left: 9%;
+    right: 9%;
+    z-index: 2;
+}
+.navbar-brand img{
+width: 120px;
+}
+.dimo{
+    width: 35px;
+    height:35px;
+    border: 1px solid rgba(12, 101, 237, .85);
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+  background-color: rgba(12, 101, 237, .85);
+    position: fixed;
+  bottom:10px
+  ;
+  right: 2%;
+ 
+}
+.buu{
+    position: relative;
+    overflow: hidden;
+   
+}
+.buu::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    background:#fff;
+    filter: blur(1px);
+  
+    opacity: 0.5;
+    top: 0%;
+    left: -150%;
+    transition: 0.9s;
+    transform: rotate(125deg) 
+    ;transition: all ease 1s;
+}
+
+.buu:hover::before{
+   left: 100%;}
